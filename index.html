@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Work Experience Shapes Resume Composition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>How Work Experience Shapes Resume Composition</h1>
+    <p>Using NLP to reveal how work experience influences resume language.</p>
+  </header>
+
+    <section id="story">
+    I was staring down a looming deadline—my and my resume needed a complete overhaul, and every line felt like a blindspot. To regain control, I turned this project into a resume-optimization lab. First, I obtained a scraped set of diverse resumes and applied NLP to reveal the most effective structures, phrases, and metrics. In the line chart above, each point shows how often key elements—like sentiment, vocabulary, and length across the sample, so I instantly knew which sections to highlight and which to streamline.
+      </p>
+      <p>
+        The site includes a variety of visualizations for different angles: a scatter plot showing sentiment versus experience, bar charts breaking down average sentiment and word count by experience bins, and multiple word clouds stacked to show category-specific term frequencies (technical skills, quantified metrics, action verbs, industry keywords). Together, these charts offer a comprehensive view of resume patterns derived from the scraped data.
+      </p>
+      <p>
+        Combined with the line chart's trend analysis, this suite of visualizations formed the backbone of my conclusion: they didn’t just reveal what to change, they showed when and why each tweak mattered. By transforming data into clear charts, this site guided me step-by-step through a focused, data-driven resume overhaul—ensuring every bullet point is in its place for maximum impact in engineering roles.
+      </p>
+</section>
+
+
+  <main>
+
+    <section id="sentiment-vs-experience" class="slide">
+      <h2>Sentiment vs. Estimated Years of Experience</h2>
+      <ul>
+        <p>This scatter plot displays every resume as a single point, positioned by its estimated years of experience (x-axis) and its overall sentiment score (y-axis). Larger circles indicate longer resumes (more words). You can see early-career resumes clustering near neutral sentiment, while mid- and late-career resumes trend toward more positive language. The marker sizes also show that the most detailed resumes tend to carry stronger sentiment.</p>
+      </ul>
+      <img src="images/scatter.png" alt="Scatter: Sentiment vs. Experience">
+      <div class="text-block">
+        <h3>Insights from the Scatter Plot</h3>
+        <ul>
+          <li>Early-career resumes (0–5 yrs) cluster near neutral sentiment, reflecting exploratory tone.</li>
+          <li>Mid-career professionals (6–10 yrs) show a clear uptick in positivity as achievements are highlighted.</li>
+          <li>Longer resumes (larger markers) often pair with stronger sentiment—suggesting detailed self-promotion.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="avg-sentiment-by-bin" class="slide">
+      <h2>Average Sentiment by Experience</h2>
+      <ul>
+        <p>This bar chart breaks down average sentiment scores into four experience groups (0–5, 6–10, 11–15, 16+ years). Taller bars mean more positive tone on average. Here, you’ll notice that sentiment steadily rises through the first three bins and then levels off, suggesting that mid-career professionals use the most upbeat language in their resumes.</p>
+      </ul>
+      <img src="images/bar_sentiment.png" alt="Bar chart: Avg. Sentiment by Bin">
+      <div class="text-block">
+        <h3>Bin-Based Sentiment Insights</h3>
+        <ul>
+          <li>0–5 yrs: Sentiment hovers just above neutral—candidates balance enthusiasm with brevity.</li>
+          <li>6–10 yrs: A notable jump in positivity suggests growing confidence in career accomplishments.</li>
+          <li>11–15 & 16+ yrs: Scores plateau around a modest positive tone—seasoned professionals adopt a polished style.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="trend-sentiment" class="slide">
+      <h2>Trend of Average Sentiment Across Experience</h2>
+      <ul>
+      <p>In this line chart, each point represents the average sentiment for one experience bin, connected to reveal the overall pattern. The downward slope from 0–5 to around 12 and half years highlights growing confidence in mid-career resumes, with a slight plateau or dip afterward. This visualization makes it easy to spot the peak sentiment window.</p>
+      </ul>
+      <img src="images/line_sentiment.png" alt="Line chart: Sentiment Trend">
+      <div class="text-block">
+        <h3>Sentiment Trend Analysis</h3>
+        <ul>
+          <li>Rising sentiment through mid-career, peaking around 10 yrs.</li>
+          <li>Plateau after ~10 yrs indicates a mature, consistent tone.</li>
+          <li>Subtle senior-level dips hint at reserved, executive-style language.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="avg-wordcount-by-bin" class="slide">
+      <h2>Average Word Count by Experience</h2>
+      <ul>
+        <p>This bar chart shows mean resume length for each experience category. You’ll see that early-stage resumes hover around 200 words, grow to about 300 words in mid-career, and then taper off slightly with seniority. It illustrates how verbosity tends to increase with experience before streamlining at senior levels.</p>
+      </ul>
+      <div id="wordcount-chart" style="margin-bottom:1rem;"></div>
+      <div class="text-block">
+        <h3>Verbosity Trends by Experience</h3>
+        <ul>
+          <li>0–5 yrs: ~200 words—concise, focused on core skills.</li>
+          <li>6–10 yrs: ~300 words—more detail on projects and results.</li>
+          <li>16+ yrs: ~250 words—executive summaries emphasizing impact.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="common-terms" class="slide">
+      <h2>Common Terms by Experience</h2>
+      <ul> <p> This set of word clouds gives a straightforward snapshot of which terms dominate each experience level. Each cloud represents one bin (e.g., 0–5 yrs, 6–10 yrs, etc.), with word size scaled to its frequency in that group. It’s an easy, at-a-glance way to compare which keywords are most common at different career stages.</p></ul>
+      <div class="term-grid">
+        <div>
+          <h3>0–5 Years</h3>
+          <img src="images/wordcloud_0-5.png" alt="Word cloud: 0–5 yrs">
+        </div>
+        <div>
+          <h3>6–10 Years</h3>
+          <img src="images/wordcloud_6-10.png" alt="Word cloud: 6–10 yrs">
+        </div>
+        <div>
+          <h3>11–15 Years</h3>
+          <img src="images/wordcloud_11-15.png" alt="Word cloud: 11–15 yrs">
+        </div>
+        <div>
+          <h3>16+ Years</h3>
+          <img src="images/wordcloud_16+.png" alt="Word cloud: 16+ yrs">
+        </div>
+      </div>
+      <div class="text-block">
+        <h3>Term Frequency Insights</h3>
+        <ul>
+          <li>0–5 yrs: “intern,” “assistant,” “learning” dominate—exploratory roles.</li>
+          <li>6–10 yrs: “managed,” “developed,” “team” rise—leadership in action.</li>
+          <li>11–15 yrs: “strategic,” “implemented,” “leadership”—big-picture focus.</li>
+          <li>16+ yrs: “portfolio,” “stakeholder,” “growth”—executive responsibilities.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="overall-conclusion">
+  <h2>Conclusion</h2>
+  <p>
+    This site transformed my resume overhaul from guesswork into a systematic, data-driven process. By visualizing term frequencies over time, comparing word clouds, and binning vocabulary by experience, I uncovered exactly which words to emphasize and which to prune. Those charts didn’t just display numbers—they guided every edit, helping me craft a resume that speaks the language recruiters actually use. In the end, I moved from reactive tweaks to proactive strategy, ensuring my resume conveys impact, precision, and confidence at every level.
+  </p>
+</section>
+
+  </main>
+
+  <footer>
+  </footer>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const data = [
+    {bin: '0–5 yrs', value: 200},
+    {bin: '6–10 yrs', value: 300},
+    {bin: '11–15 yrs', value: 275},
+    {bin: '16+ yrs', value: 250}
+  ];
+
+  const margin = {top:20, right:20, bottom:50, left:50};
+  const width = 600 - margin.left - margin.right;
+  const height = 300 - margin.top - margin.bottom;
+
+  const svg = d3.select('#wordcount-chart')
+    .append('svg')
+      .attr('width', width + margin.left + margin.right)
+      .attr('height', height + margin.top + margin.bottom)
+    .append('g')
+      .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  const x = d3.scalePoint()
+    .domain(data.map(d => d.bin))
+    .range([0, width]);
+
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.value)])
+    .range([height, 0]);
+
+  const line = d3.line()
+    .x(d => x(d.bin))
+    .y(d => y(d.value));
+
+  svg.append('path')
+      .datum(data)
+      .attr('fill', 'none')
+      .attr('stroke', 'steelblue')
+      .attr('stroke-width', 2)
+      .attr('d', line);
+
+  svg.append('g')
+      .attr('transform', `translate(0,${height})`)
+      .call(d3.axisBottom(x))
+      .selectAll('text')
+      .attr('transform', 'rotate(-45)')
+      .style('text-anchor', 'end');
+
+  svg.append('g')
+      .call(d3.axisLeft(y));
+});
+</script>
+
+</body>
+</html>
